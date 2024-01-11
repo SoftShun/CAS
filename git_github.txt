@@ -14,12 +14,12 @@ difftool (커밋아이디) : 현재파일 vs 특정커밋 비교 가능 (커밋�
 branch (abc) : abc라는 브랜치 생성. 괄호나 따옴표 X (사본같은 개념)
 switch (abc) : abc라는 브랜치로 이동. 괄호나 따옴표 X 
 merge (브랜치명) : 브랜치 코드를 main에 합치기
-
+q (앞에 git 안붙음) : 실행 종료
 
 - HEAD는 내 현 위치 (HEAD -> main 은 나는 지금 main에 있다라는 뜻) 
 - 첫 수정이 Main이 됨 (commit하면 사라짐, 수정 중인 원본 코드라고 쉽게 생각하자)
 - VSCODE에서 SOURCE CONTROL에서 +는 add , -는 add 취소 기능
 - log --all --oneline 했을 때 노란 글씨가 커밋 아이디임
 - Git Graph를 이용해서 log 기능을 더 편리하게 사용 
-
+- Conflict 해결법은 원하는 코드만 남기고 삭제한 다음 git add, git commit하면됨 (merge할 때 두 개의 파일 모두 같은 부분 수정했을 때 발생)
 
