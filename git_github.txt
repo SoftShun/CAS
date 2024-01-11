@@ -40,8 +40,6 @@ remote add (변수명) (주소) : push에 필요한 주소를 간단한 변수�
 
 
 
-
-
 - HEAD는 내 현 위치 (HEAD -> main 은 나는 지금 main에 있다라는 뜻) 
 - 첫 수정이 Main이 됨 (commit하면 사라짐, 수정 중인 원본 코드라고 쉽게 생각하자)
 - VSCODE에서 SOURCE CONTROL에서 +는 add , -는 add 취소 기능
