@@ -7,6 +7,7 @@ commit -m 'abc' : abc라는 문구 commit
 status : 현재 git상태 창 (staging한 파일 보기 등) 
 log : 커밋한 내역들 보기
 log --all --oneline : 커밋한 내역 한 줄로 보기
+log --all --oneline --graph : 그래프 형식으로 보여줌 (branch를 더 쉽게 볼 수 있음)
 diff : 커밋하기 이전과 후의 차이점을 비교해줌
 difftool : 커밋하기 이전과 후의 차이점 비교 및 수정 기능 (:q OR :qa로 닫기)
 difftool (커밋아이디) : 현재파일 vs 특정커밋 비교 가능 (커밋아이디 두개 치면 특정커밋끼리 비교)
@@ -15,7 +16,10 @@ switch (abc) : abc라는 브랜치로 이동. 괄호나 따옴표 X
 
 
 
-
+- HEAD는 내 현 위치 (HEAD -> main 은 나는 지금 main에 있다라는 뜻) 
+- 첫 수정이 Main이 됨 (commit하면 사라짐, 수정 중인 원본 코드라고 쉽게 생각하자)
 - VSCODE에서 SOURCE CONTROL에서 +는 add , -는 add 취소 기능
 - log --all --oneline 했을 때 노란 글씨가 커밋 아이디임
-- Git Graph를 이용해서 log 기능을 더 편리하게 사용
+- Git Graph를 이용해서 log 기능을 더 편리하게 사용 
+
+
