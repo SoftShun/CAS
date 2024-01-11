@@ -15,6 +15,32 @@ branch (abc) : abc라는 브랜치 생성. 괄호나 따옴표 X (사본같은 �
 switch (abc) : abc라는 브랜치로 이동. 괄호나 따옴표 X 
 merge (브랜치명) : 브랜치 코드를 main에 합치기
 q (앞에 git 안붙음) : 실행 종료
+branch -d (브랜치명) : merge 완료된 브랜치 삭제
+branch -D (브랜치명) : merge 안한 브랜치 삭제
+restore (파일명) : 파일 복구
+restore --source (커밋 아이디) (파일명) : 특정 시점으로 복구
+revert (커밋 아이디) : commit 취소 및 수정 (여러 커밋 아이디 입력 가능)
+revert HEAD : 가장 최근 commit 취소
+reset --hard (커밋 아이디) : 커밋 아이디가 생성된 시점으로 되돌리기 (리셋, 협업시에는 X)
+reset --soft (커밋 아이디) : 리셋인데 변동사항 지우지 말고 스테이징 해놓기
+reset --mixed (커밋 아이디) : 리셋인데 변동사항 지우지 말고 unstage해놓기
+
+- rebase merge - : 브랜치의 시작점을 다른 commit으로 옮겨줌. rebase하고 fast-forward merge하는 것
+git switch 새로운브랜치
+git rebase main
+
+git switch main
+git merge 새로운브랜치
+------------------------------------------------------------------------------------------
+>> Git Hub <<
+branch -M main : 브랜치 이름 main으로 설정
+push -u (원격저장소주소) (브랜치 명) : 레파지토리에 코드 올리기 (main 브랜치 아닌것도 가능)
+// -u는 주소 기억하라는 뜻이므로 한번 사용했으면 git push만 써도 -u로 보냈던 주소로 적용되어 생략하고 git push만 사용할 수 있음.
+remote add (변수명) (주소) : push에 필요한 주소를 간단한 변수로 저장해서 사용하기 위해 설정
+
+
+
+
 
 - HEAD는 내 현 위치 (HEAD -> main 은 나는 지금 main에 있다라는 뜻) 
 - 첫 수정이 Main이 됨 (commit하면 사라짐, 수정 중인 원본 코드라고 쉽게 생각하자)
