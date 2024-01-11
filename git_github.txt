@@ -1,0 +1,9 @@
+모든 명령어 앞에는 git (예를 들어 git add git_github.txt) 
+init : git 사용
+add (파일명) : 파일 staging
+add (파일명) ... (파일명) : 여러 파일 staging
+add . : 전체 파일 staging
+commit -m 'abc' : abc라는 문구 commit
+status : staging한 파일 보기 (상태창)
+log : 커밋한 내역들 보기
+log --all --oneline : 커밋한 내역 한 줄로 보기
