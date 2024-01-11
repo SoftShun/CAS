@@ -13,7 +13,7 @@ difftool : 커밋하기 이전과 후의 차이점 비교 및 수정 기능 (:q 
 difftool (커밋아이디) : 현재파일 vs 특정커밋 비교 가능 (커밋아이디 두개 치면 특정커밋끼리 비교)
 branch (abc) : abc라는 브랜치 생성. 괄호나 따옴표 X (사본같은 개념)
 switch (abc) : abc라는 브랜치로 이동. 괄호나 따옴표 X 
-
+merge (브랜치명) : 브랜치 코드를 main에 합치기
 
 
 - HEAD는 내 현 위치 (HEAD -> main 은 나는 지금 main에 있다라는 뜻) 
